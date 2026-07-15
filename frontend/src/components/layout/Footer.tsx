@@ -13,11 +13,11 @@ export function Footer() {
         <div>
           <h4 className="site-footer-heading">CONTACTO</h4>
           <p className="site-footer-text">
-            Zona: España (a confirmar)
+            Zona: Granada, España
             <br />
-            Tel: [pendiente de confirmar]
+            Tel: <a href="tel:+34692472875">+34 692 47 28 75</a>
             <br />
-            Email: [pendiente de confirmar]
+            Email: <a href="mailto:info@grupoinmobiliarioar.com">info@grupoinmobiliarioar.com</a>
           </p>
         </div>
         <div>

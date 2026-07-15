@@ -3,6 +3,7 @@ import { ScrollProgressBar } from "./ScrollProgressBar";
 import { Logo } from "./Logo";
 
 const NAV_LINKS = [
+  { href: "#quienes-somos", label: "Quiénes somos" },
   { href: "#servicios", label: "Servicios" },
   { href: "#como-funciona", label: "Cómo funciona" },
   { href: "#testimonios", label: "Testimonios" },
