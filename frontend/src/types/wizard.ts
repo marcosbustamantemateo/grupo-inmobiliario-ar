@@ -24,11 +24,6 @@ export interface WizardState {
   phone: string;
   prefix: string;
   email: string;
-  otpCode: string;
-  otpSent: boolean;
-  otpCooldown: number;
-  otpError: string;
-  otpVerified: boolean;
   address: string;
   propertyType: PropertyType | "";
   sqm: string;
@@ -44,9 +39,7 @@ export interface WizardState {
 
 export const WIZARD_STORAGE_KEY = "grupoar_wizard_v1";
 
-export const TOTAL_WIZARD_STEPS = 7;
-
-export const OTP_TEST_CODE = "123456";
+export const TOTAL_WIZARD_STEPS = 6;
 
 export function createInitialWizardState(): WizardState {
   return {
@@ -57,11 +50,6 @@ export function createInitialWizardState(): WizardState {
     phone: "",
     prefix: "+34",
     email: "",
-    otpCode: "",
-    otpSent: false,
-    otpCooldown: 0,
-    otpError: "",
-    otpVerified: false,
     address: "",
     propertyType: "",
     sqm: "",

@@ -24,7 +24,7 @@ function loadPersistedState(): WizardState {
     const raw = localStorage.getItem(WIZARD_STORAGE_KEY);
     if (!raw) return initial;
     const saved = JSON.parse(raw) as Partial<WizardState>;
-    return { ...initial, ...saved, photos: [], otpCooldown: 0 };
+    return { ...initial, ...saved, photos: [] };
   } catch {
     return initial;
   }
@@ -45,12 +45,6 @@ export function WizardProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     persistState(state);
   }, [state]);
-
-  useEffect(() => {
-    if (state.otpCooldown <= 0) return;
-    const timer = window.setInterval(() => dispatch({ type: "TICK_OTP_COOLDOWN" }), 1000);
-    return () => window.clearInterval(timer);
-  }, [state.otpCooldown > 0]);
 
   const value = useMemo(() => ({ state, dispatch }), [state]);
 
