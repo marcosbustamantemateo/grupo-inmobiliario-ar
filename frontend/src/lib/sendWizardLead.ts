@@ -17,25 +17,27 @@ export async function sendWizardLead(state: WizardState): Promise<SendResult> {
       .filter((extra) => state.extras[extra.key])
       .map((extra) => extra.label)
       .join(", ") || "Ninguno";
-  const photosSummary = state.photos.map((photo) => photo.name).join(", ") || "Ninguna";
+
+  const message = [
+    `Operacion: ${intentLabel}`,
+    `Direccion: ${state.address}`,
+    `Tipo de inmueble: ${state.propertyType}`,
+    `Metros cuadrados: ${state.sqm}`,
+    `Habitaciones: ${state.rooms}`,
+    `Banos: ${state.baths}`,
+    `Extras: ${extrasSummary}`,
+    `Precio deseado: ${state.price || "—"} EUR`,
+    `Disponible desde: ${state.availability || "—"}`,
+  ].join("\n");
 
   const payload = {
     access_key: accessKey,
     subject: `Nueva solicitud de propietario — ${state.name || "sin nombre"}`,
     from_name: "Grupo Inmobiliario AR — Web",
-    Operación: intentLabel,
-    Nombre: state.name,
-    Teléfono: `${state.prefix} ${state.phone}`,
-    Email: state.email,
-    Dirección: state.address,
-    "Tipo de inmueble": state.propertyType,
-    "Metros cuadrados": state.sqm,
-    Habitaciones: state.rooms,
-    Baños: state.baths,
-    Extras: extrasSummary,
-    Fotos: photosSummary,
-    Precio: state.price || "—",
-    "Disponible desde": state.availability || "—",
+    name: state.name,
+    email: state.email,
+    phone: `${state.prefix} ${state.phone}`,
+    message,
   };
 
   try {

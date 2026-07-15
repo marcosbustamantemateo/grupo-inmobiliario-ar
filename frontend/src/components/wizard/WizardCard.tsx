@@ -6,7 +6,6 @@ import { SubmissionSuccess } from "./SubmissionSuccess";
 import { IntentStep } from "./steps/IntentStep";
 import { ContactStep } from "./steps/ContactStep";
 import { PropertyDetailsStep } from "./steps/PropertyDetailsStep";
-import { PhotosStep } from "./steps/PhotosStep";
 import { ExpectationsStep } from "./steps/ExpectationsStep";
 import { ReviewStep } from "./steps/ReviewStep";
 
@@ -14,7 +13,6 @@ const STEP_COMPONENTS: ComponentType[] = [
   IntentStep,
   ContactStep,
   PropertyDetailsStep,
-  PhotosStep,
   ExpectationsStep,
   ReviewStep,
 ];

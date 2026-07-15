@@ -24,7 +24,7 @@ function loadPersistedState(): WizardState {
     const raw = localStorage.getItem(WIZARD_STORAGE_KEY);
     if (!raw) return initial;
     const saved = JSON.parse(raw) as Partial<WizardState>;
-    return { ...initial, ...saved, photos: [] };
+    return { ...initial, ...saved };
   } catch {
     return initial;
   }
@@ -32,8 +32,7 @@ function loadPersistedState(): WizardState {
 
 function persistState(state: WizardState) {
   try {
-    const { photos: _photos, ...rest } = state;
-    localStorage.setItem(WIZARD_STORAGE_KEY, JSON.stringify(rest));
+    localStorage.setItem(WIZARD_STORAGE_KEY, JSON.stringify(state));
   } catch {
     // Storage can fail in private browsing; persistence is a nice-to-have, not critical.
   }

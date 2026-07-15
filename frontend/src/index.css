@@ -1229,64 +1229,6 @@ img {
   background: rgba(63, 169, 245, 0.08);
 }
 
-.wizard-dropzone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border: 2px dashed #c7d0da;
-  border-radius: 14px;
-  padding: 32px 16px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.wizard-dropzone-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.wizard-dropzone-subtitle {
-  font-size: 12.5px;
-  color: var(--text-muted);
-}
-
-.wizard-photo-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.wizard-photo-thumb {
-  position: relative;
-  aspect-ratio: 1;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.wizard-photo-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.wizard-photo-thumb button {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.6);
-  color: var(--white);
-  border: none;
-  font-size: 12px;
-  line-height: 1;
-}
-
 .wizard-review-list {
   display: grid;
   gap: 10px;

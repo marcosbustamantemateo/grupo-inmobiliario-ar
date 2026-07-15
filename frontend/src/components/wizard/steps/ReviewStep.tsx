@@ -38,20 +38,18 @@ export function ReviewStep() {
             Propiedad: <strong>{state.propertyType}</strong>, {state.sqm} m², {state.rooms} hab ·{" "}
             {state.baths} baños
           </span>
-          <button type="button" onClick={() => goToStep(3)}>
+          <button type="button" onClick={() => goToStep(2)}>
             Editar
           </button>
         </div>
         <div className="wizard-review-row">
-          <span>
-            Extras: {extrasSummary} · {state.photos.length} foto(s)
-          </span>
+          <span>Extras: {extrasSummary}</span>
         </div>
         <div className="wizard-review-row">
           <span>
             Precio: {state.price || "—"} € · Disponible desde: {state.availability || "—"}
           </span>
-          <button type="button" onClick={() => goToStep(5)}>
+          <button type="button" onClick={() => goToStep(4)}>
             Editar
           </button>
         </div>

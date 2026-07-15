@@ -10,12 +10,6 @@ export interface PropertyExtras {
   amueblado: boolean;
 }
 
-export interface PropertyPhoto {
-  id: string;
-  name: string;
-  url: string;
-}
-
 export interface WizardState {
   step: number;
   submitted: boolean;
@@ -30,7 +24,6 @@ export interface WizardState {
   rooms: number;
   baths: number;
   extras: PropertyExtras;
-  photos: PropertyPhoto[];
   price: string;
   availability: string;
   acceptTerms: boolean;
@@ -39,7 +32,7 @@ export interface WizardState {
 
 export const WIZARD_STORAGE_KEY = "grupoar_wizard_v1";
 
-export const TOTAL_WIZARD_STEPS = 6;
+export const TOTAL_WIZARD_STEPS = 5;
 
 export function createInitialWizardState(): WizardState {
   return {
@@ -62,7 +55,6 @@ export function createInitialWizardState(): WizardState {
       piscina: false,
       amueblado: false,
     },
-    photos: [],
     price: "",
     availability: "",
     acceptTerms: false,

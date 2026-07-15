@@ -4,8 +4,6 @@ export type WizardAction =
   | { type: "SET_FIELD"; field: keyof WizardState; value: WizardState[keyof WizardState] }
   | { type: "TOGGLE_EXTRA"; key: keyof PropertyExtras }
   | { type: "ADJUST_COUNT"; field: "rooms" | "baths"; delta: number; min: number }
-  | { type: "ADD_PHOTOS"; photos: WizardState["photos"] }
-  | { type: "REMOVE_PHOTO"; id: string }
   | { type: "GO_TO_STEP"; step: number }
   | { type: "GO_NEXT" }
   | { type: "GO_BACK" }
@@ -28,14 +26,6 @@ export function wizardReducer(state: WizardState, action: WizardAction): WizardS
         ...state,
         [action.field]: Math.max(action.min, state[action.field] + action.delta),
       };
-
-    case "ADD_PHOTOS": {
-      const room = Math.max(0, 8 - state.photos.length);
-      return { ...state, photos: [...state.photos, ...action.photos.slice(0, room)] };
-    }
-
-    case "REMOVE_PHOTO":
-      return { ...state, photos: state.photos.filter((photo) => photo.id !== action.id) };
 
     case "GO_TO_STEP":
       return { ...state, step: action.step, stepError: "" };
