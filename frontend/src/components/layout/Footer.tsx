@@ -23,6 +23,7 @@ export function Footer() {
         <div>
           <h4 className="site-footer-heading">EMPRESA</h4>
           <div className="site-footer-links">
+            <a href="#quienes-somos">Quiénes somos</a>
             <a href="#servicios">Servicios</a>
             <a href="#como-funciona">Cómo funciona</a>
             <a href="#testimonios">Testimonios</a>
