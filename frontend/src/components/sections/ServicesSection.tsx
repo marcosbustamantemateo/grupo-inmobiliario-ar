@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { RevealSection } from "../layout/RevealSection";
 import { serviceFeatures } from "../../data/content";
 import type { ServiceFilter } from "../../types/content";
-
 const FILTERS: Array<{ key: ServiceFilter; label: string }> = [
   { key: "todo", label: "TODO" },
   { key: "alquiler", label: "ALQUILER" },
@@ -29,27 +28,37 @@ export function ServicesSection() {
         </div>
 
         <div className="services-columns">
-          <div>
-            <span className="services-tag services-tag-rent">ALQUILER</span>
-            <h3>Alquila sin complicaciones, nosotros nos encargamos de todo</h3>
-            <p>
-              Pones tu propiedad en alquiler y nosotros gestionamos cada paso, desde la primera visita
-              hasta la firma del contrato.
-            </p>
-            <p className="services-highlight">
-              Tú decides las condiciones. Nosotros hacemos que llegue a las manos correctas.
-            </p>
+          <div className="services-column">
+            <div className="services-illustration">
+              <img src="/rent-building.png" alt="Edificio de apartamentos en alquiler" />
+            </div>
+            <div>
+              <span className="services-tag services-tag-rent">ALQUILER</span>
+              <h3>Alquila sin complicaciones, nosotros nos encargamos de todo</h3>
+              <p>
+                Pones tu propiedad en alquiler y nosotros gestionamos cada paso, desde la primera visita
+                hasta la firma del contrato.
+              </p>
+              <p className="services-highlight">
+                Tú decides las condiciones. Nosotros hacemos que llegue a las manos correctas.
+              </p>
+            </div>
           </div>
-          <div>
-            <span className="services-tag services-tag-sale">VENTA</span>
-            <h3>Vende tu propiedad al mejor precio, con respaldo legal en cada paso</h3>
-            <p>
-              Vender una propiedad implica muchas decisiones y mucho papeleo. Nosotros lo simplificamos
-              para que tú solo tengas que decidir cuándo firmar.
-            </p>
-            <p className="services-highlight">
-              Vender tu propiedad no debería ser un segundo trabajo. Deja que lo hagamos nosotros.
-            </p>
+          <div className="services-column">
+            <div className="services-illustration">
+              <img src="/sell-home.png" alt="Casa en venta" />
+            </div>
+            <div>
+              <span className="services-tag services-tag-sale">VENTA</span>
+              <h3>Vende tu propiedad al mejor precio, con respaldo legal en cada paso</h3>
+              <p>
+                Vender una propiedad implica muchas decisiones y mucho papeleo. Nosotros lo simplificamos
+                para que tú solo tengas que decidir cuándo firmar.
+              </p>
+              <p className="services-highlight">
+                Vender tu propiedad no debería ser un segundo trabajo. Deja que lo hagamos nosotros.
+              </p>
+            </div>
           </div>
         </div>
 

@@ -1,84 +1,93 @@
 import type { ProcessStep, ServiceFeature, Testimonial } from "../types/content";
+import {
+  CameraIcon,
+  ClipboardCheckIcon,
+  CoinIcon,
+  DashboardIcon,
+  GlobeIcon,
+  KeyIcon,
+  ScaleIcon,
+} from "../components/icons/ServiceIcons";
 
 export const serviceFeatures: ServiceFeature[] = [
   {
-    icon: "\u{1F4F8}",
+    icon: <CameraIcon />,
     title: "Reportaje fotográfico profesional",
     description:
       "Agendamos la visita en el horario que mejor te venga y hacemos las fotos que realmente venden tu propiedad.",
     category: "alquiler",
   },
   {
-    icon: "\u{1F310}",
+    icon: <GlobeIcon />,
     title: "Publicación en los principales portales",
     description:
       "Tu anuncio aparece en Idealista, Fotocasa, Habitaclia y el resto de plataformas al mismo tiempo, sin que tengas que subirlo tú a cada una.",
     category: "alquiler",
   },
   {
-    icon: "\u{1F4CB}",
+    icon: <ClipboardCheckIcon />,
     title: "Selección de inquilinos",
     description:
       "Filtramos y verificamos a los candidatos antes de que llegues a hablar con ellos, para que no pierdas tiempo con perfiles que no encajan.",
     category: "alquiler",
   },
   {
-    icon: "\u{1F511}",
+    icon: <KeyIcon />,
     title: "Gestión de visitas",
     description:
       "Coordinamos todas las visitas directamente con los interesados; tú solo confirmas cuando hay una oferta seria.",
     category: "alquiler",
   },
   {
-    icon: "⚖️",
+    icon: <ScaleIcon />,
     title: "Contrato y asesoramiento legal",
     description:
       "Nuestro equipo de abogados especializados en arrendamientos redacta y revisa el contrato, protegiéndote frente a cualquier imprevisto.",
     category: "alquiler",
   },
   {
-    icon: "\u{1F4CA}",
+    icon: <DashboardIcon />,
     title: "Seguimiento en tu panel personal",
     description:
       "Consulta en cualquier momento el estado de tu propiedad, las visitas agendadas y las ofertas recibidas, sin tener que llamar para preguntar.",
     category: "alquiler",
   },
   {
-    icon: "\u{1F4B6}",
+    icon: <CoinIcon />,
     title: "Valoración real de tu propiedad",
     description:
       "Te ayudamos a fijar un precio competitivo basado en el mercado actual, no en suposiciones.",
     category: "venta",
   },
   {
-    icon: "\u{1F4F8}",
+    icon: <CameraIcon />,
     title: "Reportaje fotográfico profesional",
     description: "Las primeras impresiones venden: agendamos la sesión de fotos cuando mejor te venga.",
     category: "venta",
   },
   {
-    icon: "\u{1F310}",
+    icon: <GlobeIcon />,
     title: "Máxima visibilidad",
     description:
       "Publicamos tu propiedad en Idealista, Fotocasa, Habitaclia, Milanuncios y el resto de portales relevantes, a la vez.",
     category: "venta",
   },
   {
-    icon: "\u{1F511}",
+    icon: <KeyIcon />,
     title: "Gestión de visitas y ofertas",
     description:
       "Coordinamos cada visita y te hacemos llegar únicamente las ofertas serias, con seguimiento claro de cada una.",
     category: "venta",
   },
   {
-    icon: "\u{1F4CB}",
+    icon: <ClipboardCheckIcon />,
     title: "Comprobación de compradores",
     description:
       "Verificamos la solvencia y seriedad de cada interesado antes de avanzar, para no perder tiempo en negociaciones que no van a ningún lado.",
     category: "venta",
   },
   {
-    icon: "⚖️",
+    icon: <ScaleIcon />,
     title: "Asesoramiento legal especializado",
     description:
       "Abogados expertos en compraventa revisan cada documento, desde las notas simples hasta la escritura final, para que la operación esté blindada legalmente.",

@@ -1,7 +1,9 @@
+import type { ReactNode } from "react";
+
 export type ServiceCategory = "alquiler" | "venta";
 
 export interface ServiceFeature {
-  icon: string;
+  icon: ReactNode;
   title: string;
   description: string;
   category: ServiceCategory;
