@@ -27,7 +27,11 @@ const HISTORY_PARAGRAPHS = [
 
 export function AboutSection() {
   return (
-    <RevealSection id="quienes-somos" className="section section-light">
+    <RevealSection
+      id="quienes-somos"
+      className="section section-light about-section"
+      background={<div className="about-history-background" aria-hidden="true" />}
+    >
       <div className="section-inner section-inner-narrow">
         <div className="section-heading">
           <span className="section-eyebrow">¿QUIÉNES SOMOS?</span>

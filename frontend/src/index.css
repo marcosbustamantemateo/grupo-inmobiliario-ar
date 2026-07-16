@@ -597,6 +597,41 @@ img {
   }
 }
 
+.about-section.section {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: clamp(280px, 34vw, 480px);
+}
+
+.about-history-background {
+  position: absolute;
+  inset: 0;
+  background-image: url("/our-history-background.png");
+  background-repeat: no-repeat;
+  background-position: center bottom -40px;
+  background-size: cover;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+@media (max-width: 760px) {
+  .about-section.section {
+    padding-bottom: clamp(70px, 9vw, 120px);
+  }
+
+  .about-history-background {
+    display: none;
+  }
+}
+
+.about-section .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .about-history {
   border: 1px solid var(--slate-border);
   border-radius: 20px;
