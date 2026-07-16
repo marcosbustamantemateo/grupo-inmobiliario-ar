@@ -322,16 +322,13 @@ img {
 
 .hero-skyline {
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: min(100%, 1500px);
-  aspect-ratio: 1600 / 520;
-  background-image: url("/hero-skyline.svg");
+  inset: 0;
+  background-image:
+    linear-gradient(180deg, rgba(5, 11, 20, 0.35) 0%, rgba(5, 11, 20, 0.05) 35%, rgba(5, 11, 20, 0.55) 100%),
+    url("/hero-skyline.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 100% 100%;
-  opacity: 0.95;
+  background-size: cover;
   pointer-events: none;
   z-index: 1;
 }
@@ -354,11 +351,15 @@ img {
   }
 
   .hero {
-    padding-bottom: calc(34vw + 32px);
+    padding-bottom: calc(54vw + 32px);
   }
 
   .hero-skyline {
-    opacity: 0.85;
+    top: auto;
+    height: auto;
+    aspect-ratio: 1714 / 918;
+    background-size: cover;
+    background-position: bottom center;
   }
 }
 
