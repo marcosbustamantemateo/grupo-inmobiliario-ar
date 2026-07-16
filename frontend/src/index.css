@@ -322,15 +322,13 @@ img {
 
 .hero-skyline {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: min(46vh, 420px);
-  background-image: url("/hero-skyline.svg");
+  inset: 0;
+  background-image:
+    linear-gradient(180deg, rgba(5, 11, 20, 0.35) 0%, rgba(5, 11, 20, 0.05) 35%, rgba(5, 11, 20, 0.55) 100%),
+    url("/hero-skyline.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  opacity: 0.9;
   pointer-events: none;
   z-index: 1;
 }
@@ -350,6 +348,13 @@ img {
 @media (max-width: 860px) {
   .hero-inner {
     grid-template-columns: 1fr;
+  }
+
+  .hero-skyline {
+    background-image:
+      linear-gradient(180deg, rgba(5, 11, 20, 0.85) 0%, rgba(5, 11, 20, 0.55) 38%, rgba(5, 11, 20, 0.2) 58%, rgba(5, 11, 20, 0.72) 100%),
+      url("/hero-skyline-mobile.jpg");
+    background-position: bottom center;
   }
 }
 
