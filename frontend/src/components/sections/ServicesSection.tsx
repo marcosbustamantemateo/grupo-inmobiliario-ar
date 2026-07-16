@@ -100,6 +100,22 @@ export function ServicesSection() {
             </div>
           ))}
         </div>
+
+        <div className="legal-partner">
+          <div className="legal-partner-body">
+            <span className="legal-partner-tag">RESPALDO LEGAL</span>
+            <h3 className="legal-partner-title">Contamos con asesoría legal propia</h3>
+            <p className="legal-partner-text">
+              Cada contrato de alquiler y cada compraventa pasa por manos de abogados
+              especializados, para que tu operación esté protegida de principio a fin.
+            </p>
+          </div>
+          <img
+            src="/legal-advisor-card.png"
+            alt="Francisco José González Pavón, Abogado — asesoría legal de Grupo A.R"
+            className="legal-partner-card"
+          />
+        </div>
       </div>
     </RevealSection>
   );
