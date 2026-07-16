@@ -19,7 +19,8 @@ export function ServicesSection() {
   }, [filter]);
 
   return (
-    <RevealSection id="servicios" className="section section-light">
+    <RevealSection id="servicios" className="section section-light services-section">
+      <div className="services-background" aria-hidden="true" />
       <div className="section-inner">
         <div className="section-heading">
           <span className="section-eyebrow">SERVICIOS</span>
