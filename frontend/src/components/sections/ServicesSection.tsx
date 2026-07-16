@@ -111,7 +111,7 @@ export function ServicesSection() {
             </p>
           </div>
           <img
-            src="/legal-advisor-card.png"
+            src="/legal-advisor-card.jpg"
             alt="Francisco José González Pavón, Abogado — asesoría legal de Grupo A.R"
             className="legal-partner-card"
           />
