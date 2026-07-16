@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" preserveAspectRatio="xMidYMax slice" fill="none">
+  <defs>
+    <linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fa8d9" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#3b6ea5" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="alhambraFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16233b" />
+      <stop offset="100%" stop-color="#0b1626" />
+    </linearGradient>
+    <linearGradient id="glassA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c3a63" />
+      <stop offset="100%" stop-color="#0d1f3a" />
+    </linearGradient>
+    <linearGradient id="glassB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#234874" />
+      <stop offset="100%" stop-color="#0f2544" />
+    </linearGradient>
+    <linearGradient id="glassC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2c5a8f" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#122a4d" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- distant snow-capped sierra -->
+  <path d="M0,260 L60,190 L110,225 L170,150 L230,210 L300,160 L360,220 L430,175 L500,235 L560,190 L620,240 L680,200 L760,250 L820,215 L900,255 L1600,255 L1600,460 L0,460 Z"
+        fill="url(#mountain)" />
+  <path d="M110,225 L130,210 L150,222 M230,210 L250,196 L268,208 M430,175 L452,160 L472,172 M680,200 L700,187 L718,198"
+        stroke="#eaf3ff" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- ===================== ALHAMBRA (left) ===================== -->
+  <g>
+    <!-- rocky base -->
+    <path d="M0,380 L40,345 L90,360 L140,330 L210,352 L270,320 L320,345 L380,332 L420,360 L470,340 L520,360 L560,345 L600,362 L640,340 L660,362 L680,460 L0,460 Z"
+          fill="#0b1626" />
+
+    <!-- Torre de la Vela cluster (left tower) -->
+    <rect x="30" y="230" width="46" height="140" fill="url(#alhambraFace)" />
+    <path d="M30,230 L53,208 L76,230 Z" fill="#12213a" />
+    <rect x="38" y="255" width="8" height="16" fill="#f4c27a" opacity="0.85" />
+    <rect x="60" y="255" width="8" height="16" fill="#f4c27a" opacity="0.5" />
+    <rect x="38" y="290" width="8" height="16" fill="#f4c27a" opacity="0.6" />
+    <rect x="60" y="290" width="8" height="16" fill="#f4c27a" opacity="0.85" />
+    <rect x="24" y="222" width="6" height="12" fill="#0b1626" />
+    <rect x="36" y="222" width="6" height="12" fill="#0b1626" />
+    <rect x="48" y="222" width="6" height="12" fill="#0b1626" />
+    <rect x="60" y="222" width="6" height="12" fill="#0b1626" />
+    <rect x="72" y="222" width="6" height="12" fill="#0b1626" />
+
+    <!-- long fortress wall with crenellations -->
+    <rect x="76" y="300" width="230" height="70" fill="url(#alhambraFace)" />
+    <g fill="#0b1626">
+      <rect x="76" y="292" width="14" height="12" />
+      <rect x="100" y="292" width="14" height="12" />
+      <rect x="124" y="292" width="14" height="12" />
+      <rect x="148" y="292" width="14" height="12" />
+      <rect x="172" y="292" width="14" height="12" />
+      <rect x="196" y="292" width="14" height="12" />
+      <rect x="220" y="292" width="14" height="12" />
+      <rect x="244" y="292" width="14" height="12" />
+      <rect x="268" y="292" width="14" height="12" />
+      <rect x="292" y="292" width="14" height="12" />
+    </g>
+    <rect x="96" y="320" width="10" height="18" fill="#f4c27a" opacity="0.7" />
+    <rect x="130" y="320" width="10" height="18" fill="#f4c27a" opacity="0.4" />
+    <rect x="164" y="320" width="10" height="18" fill="#f4c27a" opacity="0.75" />
+    <rect x="198" y="320" width="10" height="18" fill="#f4c27a" opacity="0.5" />
+    <rect x="232" y="320" width="10" height="18" fill="#f4c27a" opacity="0.7" />
+    <rect x="266" y="320" width="10" height="18" fill="#f4c27a" opacity="0.45" />
+
+    <!-- Torre de Comares (tall central tower) -->
+    <rect x="300" y="150" width="64" height="220" fill="url(#alhambraFace)" />
+    <g fill="#0b1626">
+      <rect x="300" y="142" width="12" height="12" />
+      <rect x="320" y="142" width="12" height="12" />
+      <rect x="340" y="142" width="12" height="12" />
+      <rect x="352" y="142" width="12" height="12" />
+    </g>
+    <rect x="316" y="180" width="12" height="24" fill="#f4c27a" opacity="0.85" />
+    <rect x="336" y="180" width="12" height="24" fill="#f4c27a" opacity="0.5" />
+    <rect x="316" y="220" width="12" height="24" fill="#f4c27a" opacity="0.6" />
+    <rect x="336" y="220" width="12" height="24" fill="#f4c27a" opacity="0.85" />
+    <rect x="316" y="260" width="12" height="24" fill="#f4c27a" opacity="0.5" />
+    <rect x="336" y="260" width="12" height="24" fill="#f4c27a" opacity="0.75" />
+    <rect x="316" y="300" width="12" height="24" fill="#f4c27a" opacity="0.7" />
+    <rect x="336" y="300" width="12" height="24" fill="#f4c27a" opacity="0.4" />
+
+    <!-- Palacios Nazaríes low wing with arches -->
+    <rect x="364" y="290" width="180" height="80" fill="url(#alhambraFace)" />
+    <g fill="#0b1626">
+      <rect x="364" y="282" width="14" height="12" />
+      <rect x="388" y="282" width="14" height="12" />
+      <rect x="412" y="282" width="14" height="12" />
+      <rect x="436" y="282" width="14" height="12" />
+      <rect x="460" y="282" width="14" height="12" />
+      <rect x="484" y="282" width="14" height="12" />
+      <rect x="508" y="282" width="14" height="12" />
+      <rect x="530" y="282" width="14" height="12" />
+    </g>
+    <path d="M384,340 a12,16 0 0 1 24,0 v20 h-24 Z" fill="#f4c27a" opacity="0.7" />
+    <path d="M424,340 a12,16 0 0 1 24,0 v20 h-24 Z" fill="#f4c27a" opacity="0.45" />
+    <path d="M464,340 a12,16 0 0 1 24,0 v20 h-24 Z" fill="#f4c27a" opacity="0.75" />
+    <path d="M504,340 a12,16 0 0 1 24,0 v20 h-24 Z" fill="#f4c27a" opacity="0.5" />
+
+    <!-- small side tower closing the fortress -->
+    <rect x="544" y="245" width="40" height="125" fill="url(#alhambraFace)" />
+    <g fill="#0b1626">
+      <rect x="544" y="237" width="10" height="10" />
+      <rect x="562" y="237" width="10" height="10" />
+      <rect x="576" y="237" width="8" height="10" />
+    </g>
+    <rect x="554" y="270" width="9" height="16" fill="#f4c27a" opacity="0.6" />
+    <rect x="554" y="300" width="9" height="16" fill="#f4c27a" opacity="0.8" />
+
+    <!-- cypress trees at the base -->
+    <path d="M600,370 C594,340 606,330 604,300 C614,330 626,340 618,370 Z" fill="#0b1626" />
+    <path d="M624,370 C619,348 629,340 627,318 C635,340 645,348 638,370 Z" fill="#0b1626" />
+  </g>
+
+  <!-- ===================== MODERN SKYLINE (right) ===================== -->
+  <g>
+    <rect x="660" y="300" width="70" height="160" fill="url(#glassA)" />
+    <rect x="740" y="250" width="55" height="210" fill="url(#glassB)" />
+    <rect x="805" y="310" width="60" height="150" fill="url(#glassA)" />
+    <rect x="875" y="200" width="50" height="260" fill="url(#glassC)" />
+    <polygon points="875,200 900,150 925,200" fill="url(#glassC)" />
+    <rect x="897" y="130" width="6" height="24" fill="#274a72" />
+    <circle cx="900" cy="126" r="4" fill="#ff5a5a" opacity="0.9" />
+
+    <rect x="935" y="270" width="65" height="190" fill="url(#glassB)" />
+    <rect x="1010" y="180" width="46" height="280" fill="url(#glassA)" />
+    <rect x="1066" y="230" width="70" height="230" fill="url(#glassC)" />
+    <rect x="1146" y="150" width="52" height="310" fill="url(#glassB)" />
+    <polygon points="1146,150 1172,90 1198,150" fill="url(#glassB)" />
+    <rect x="1169" y="70" width="6" height="22" fill="#274a72" />
+    <circle cx="1172" cy="66" r="4" fill="#ff5a5a" opacity="0.9" />
+
+    <rect x="1208" y="290" width="60" height="170" fill="url(#glassA)" />
+    <rect x="1278" y="240" width="46" height="220" fill="url(#glassC)" />
+    <rect x="1334" y="300" width="66" height="160" fill="url(#glassB)" />
+    <rect x="1410" y="260" width="50" height="200" fill="url(#glassA)" />
+    <rect x="1470" y="320" width="60" height="140" fill="url(#glassC)" />
+    <rect x="1540" y="280" width="60" height="180" fill="url(#glassB)" />
+
+    <!-- window grids -->
+    <g fill="#e9f4ff" opacity="0.55">
+      <g id="wgrid">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" /><rect x="718" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" /><rect x="718" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" /><rect x="702" y="355" width="6" height="8" /><rect x="718" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" /><rect x="702" y="375" width="6" height="8" /><rect x="718" y="375" width="6" height="8" />
+      </g>
+      <g transform="translate(78,-60)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" />
+        <rect x="670" y="395" width="6" height="8" /><rect x="686" y="395" width="6" height="8" />
+      </g>
+      <g transform="translate(206,15)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" /><rect x="702" y="355" width="6" height="8" />
+      </g>
+      <g transform="translate(340,-100)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" /><rect x="702" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" /><rect x="702" y="375" width="6" height="8" />
+        <rect x="670" y="395" width="6" height="8" /><rect x="686" y="395" width="6" height="8" /><rect x="702" y="395" width="6" height="8" />
+        <rect x="670" y="415" width="6" height="8" /><rect x="686" y="415" width="6" height="8" /><rect x="702" y="415" width="6" height="8" />
+      </g>
+      <g transform="translate(465,-45)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" />
+      </g>
+      <g transform="translate(548,25)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" />
+      </g>
+      <g transform="translate(604,-140)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" />
+        <rect x="670" y="395" width="6" height="8" /><rect x="686" y="395" width="6" height="8" />
+        <rect x="670" y="415" width="6" height="8" /><rect x="686" y="415" width="6" height="8" />
+      </g>
+      <g transform="translate(680,-90)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" />
+        <rect x="670" y="375" width="6" height="8" /><rect x="686" y="375" width="6" height="8" />
+      </g>
+      <g transform="translate(740,-30)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" /><rect x="702" y="355" width="6" height="8" />
+      </g>
+      <g transform="translate(810,-70)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" />
+        <rect x="670" y="355" width="6" height="8" /><rect x="686" y="355" width="6" height="8" />
+      </g>
+      <g transform="translate(870,15)">
+        <rect x="670" y="315" width="6" height="8" /><rect x="686" y="315" width="6" height="8" /><rect x="702" y="315" width="6" height="8" />
+        <rect x="670" y="335" width="6" height="8" /><rect x="686" y="335" width="6" height="8" /><rect x="702" y="335" width="6" height="8" />
+      </g>
+    </g>
+  </g>
+</svg>

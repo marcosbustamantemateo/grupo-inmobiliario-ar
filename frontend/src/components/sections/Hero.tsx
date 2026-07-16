@@ -20,6 +20,7 @@ export function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="hero-glow" aria-hidden="true" />
+      <div className="hero-skyline" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-copy">
           <div className="hero-badge">
