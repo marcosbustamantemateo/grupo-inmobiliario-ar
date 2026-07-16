@@ -452,6 +452,17 @@ img {
   font-weight: 700;
 }
 
+.hero-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(63, 169, 245, 0.14);
+}
+
 .hero-trust-card h3 {
   color: var(--white);
   font-size: 14.5px;
