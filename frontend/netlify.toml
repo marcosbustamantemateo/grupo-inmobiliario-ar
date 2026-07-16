@@ -2,23 +2,7 @@
   command = "npm run build"
   publish = "dist"
 
-# Force non-www domain to prevent SSL certificate mismatch
-[[redirects]]
-  from = "https://www.grupoinmobiliarioar.com/*"
-  to = "https://grupoinmobiliarioar.com/:splat"
-  status = 301
-  force = true
-
-# SPA routing fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Security headers
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
