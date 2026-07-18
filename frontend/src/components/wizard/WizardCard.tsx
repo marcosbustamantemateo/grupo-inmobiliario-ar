@@ -1,5 +1,6 @@
 import { useState, type ComponentType } from "react";
 import { useWizard } from "../../context/WizardContext";
+import { validateStep } from "../../context/wizardValidation";
 import { sendWizardLead } from "../../lib/sendWizardLead";
 import { WizardProgress } from "./WizardProgress";
 import { SubmissionSuccess } from "./SubmissionSuccess";
@@ -38,6 +39,12 @@ export function WizardCard() {
   const handlePrimaryAction = async () => {
     if (!isFinalStep) {
       dispatch({ type: "GO_NEXT" });
+      return;
+    }
+
+    const error = validateStep(state, state.step);
+    if (error) {
+      dispatch({ type: "SET_STEP_ERROR", error });
       return;
     }
 
